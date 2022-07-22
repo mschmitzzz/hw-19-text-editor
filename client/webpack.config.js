@@ -21,7 +21,7 @@ module.exports = () => {
       new HtmlWebpackPlugin({
         template: './index.html',
         title: 'J.A.T.E.',
-        favicon: "./favicon.ico"
+        favicon: "./favicon.ico",
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
@@ -60,7 +60,7 @@ module.exports = () => {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
-              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtim'],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
             },
           },
         },
